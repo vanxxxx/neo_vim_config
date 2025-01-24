@@ -5,11 +5,18 @@ return {
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
-    -- overrides `require("mason-lspconfig").setup(...)`
+    "neovim/nvim-lspconfig",
     opts = {
-      ensure_installed = {
-        "lua_ls",
-        -- add more arguments for adding more language servers
+      servers = {
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = "standard",
+              },
+            },
+          },
+        },
       },
     },
   },

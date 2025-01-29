@@ -13,6 +13,21 @@ return {
             basedpyright = {
               analysis = {
                 typeCheckingMode = "standard",
+                reportUnknownArgumentType = "none",
+                reportUnknownParameterType = "none",
+                reportUnknownMemberType = "none",
+                allowedUntypedLibraries = {"library", "module.submodule"},
+              },
+            },
+          },
+        },
+        pyright = {
+          settings = {
+            pyright = {
+              analysis = {
+                reportUnknownArgumentType = "none",
+                reportUnknownParameterType = "none",
+                reportUnknownMemberType = "none",
               },
             },
           },

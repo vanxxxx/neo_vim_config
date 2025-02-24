@@ -19,7 +19,8 @@ return {
   {
     "goolord/alpha-nvim",
     opts = function(_, opts)
-      -- customize the dashboard header
+      -- customize the dashboard headeff8da1r
+      vim.api.nvim_set_hl(0, "PinkGroup", { fg = "#dbb2b9" })
       opts.section.header.val = {
         -- "███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗",
         -- "████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║",
@@ -34,6 +35,7 @@ return {
         -- "██║╚██╗██║╚██╗ ██╔╝██║██║╚██╔╝██║",
         -- "██║ ╚████║ ╚████╔╝ ██║██║ ╚═╝ ██║",
         -- "╚═╝  ╚═══╝  ╚═══╝  ╚═╝╚═╝     ╚═╝",
+
         " ⣇⣿⠘⣿⣿⣿⡿⡿⣟⣟⢟⢟⢝⠵⡝⣿⡿⢂⣼⣿⣷⣌⠩⡫⡻⣝⠹⢿⣿⣷",
         " ⡆⣿⣆⠱⣝⡵⣝⢅⠙⣿⢕⢕⢕⢕⢝⣥⢒⠅⣿⣿⣿⡿⣳⣌⠪⡪⣡⢑⢝⣇",
         " ⡆⣿⣿⣦⠹⣳⣳⣕⢅⠈⢗⢕⢕⢕⢕⢕⢈⢆⠟⠋⠉⠁⠉⠉⠁⠈⠼⢐⢕⢽",
@@ -56,6 +58,28 @@ return {
         "        ╔╗╔╔═╗╔═╗╦  ╦╦╔╦╗     ",
         "        ║║║║╣ ║ ║╚╗╔╝║║║║     ",
         "        ╝╚╝╚═╝╚═╝ ╚╝ ╩╩ ╩",
+      }
+      opts.section.header.opts = {
+        hl = {
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "PinkGroup", 0, -1 } },
+          { { "function", 0, -1 } },
+          { { "function", 0, -1 } },
+          { { "function", 0, -1 } },
+        },
+        position = "center",
       }
       return opts
     end,
